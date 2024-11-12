@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difficult Quantum Programming Playground</title>
+</head>
+<body>
+    <h1>Difficult Quantum Programming Playground</h1>
+    <p>Available operations: H (Hadamard), X (Pauli-X), Y (Pauli-Y), Z (Pauli-Z), CX (CNOT), CCX (Toffoli), encode(data_qubit, ancilla_qubits), decode(ancilla_qubits, data_qubit, syndrome_bits)</p>
+    <form action="/execute" method="POST">
+        <label for="code">Write your quantum code:</label>
+        <textarea id="code" name="code" rows="15" cols="80" required></textarea>
+        <button type="submit">Execute</button>
+    </form>
+</body>
+</html>
